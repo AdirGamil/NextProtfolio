@@ -67,7 +67,7 @@ export default function NavbarMobile() {
       {/* כפתור Toggle */}
       <button
         onClick={() => toggleOpen()}
-        className="text-3xl text-foreground absolute top-4 right-4 z-50"
+        className="text-3xl hover:cursor-pointer text-foreground absolute top-4 right-4 z-50"
         aria-label="Toggle Menu"
       >
         <motion.svg width="23" height="23" viewBox="0 0 23 23">
@@ -119,7 +119,7 @@ export default function NavbarMobile() {
         variants={sidebarVariants}
       >
         <motion.ul
-          className="pt-28 pr-10 flex flex-col gap-6 items-end"
+          className="pt-28 pr-10 flex flex-col gap-8 nav__links items-end"
           variants={menuVariants}
           initial={false}
           animate={isOpen ? 'open' : 'closed'}
