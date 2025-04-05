@@ -1,15 +1,14 @@
 
 const Hero = () => {
   return (
-<section className="bg-background text-foreground p-8 border border-border rounded-xl">
-  <h1 className="text-4xl font-heading text-primary">Hi, I'm Adir</h1>
-  <p className="mt-4 text-muted font-body">
-    Full Stack Developer passionate about clean code and great UX.
-  </p>
-  <button className="mt-6 bg-accent text-foreground px-4 py-2 rounded-md hover:opacity-90">
+<div className="bg-background text-foreground border border-border p-6 rounded-xl">
+  <h1 className="text-primary text-3xl font-bold">Hi, I'm Adir</h1>
+  <p className="text-muted">Full Stack Developer</p>
+  <button className="bg-accent text-foreground px-4 py-2 rounded hover:bg-primary">
     Contact Me
   </button>
-</section>
+</div>
+
 
   )
 }
