@@ -11,12 +11,7 @@ const config: Config = {
     './layouts/**/*.{ts,tsx}',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        heading: ['var(--font-poppins)', 'sans-serif'],
-        body: ['var(--font-inter)', 'sans-serif'],
-      },
-    },
+    extend: {},
   },
   darkMode: 'class',
   plugins: [],
