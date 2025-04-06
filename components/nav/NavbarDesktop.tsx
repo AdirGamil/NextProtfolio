@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { navLinks } from '@/contracts/navLinks'
+import ThemeToggle from '../ui/ThemeToggle'
 
 const NavbarDesktop = () => {
   return (
@@ -22,7 +23,6 @@ const NavbarDesktop = () => {
           </li>
         ))}
       </ul>
-
       {/* אייקונים */}
       <div className="flex gap-4 items-center">
         <a
@@ -43,6 +43,8 @@ const NavbarDesktop = () => {
         >
           <FaLinkedin />
         </a>
+      <ThemeToggle />
+
       </div>
     </nav>
   )

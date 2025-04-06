@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from 'react'
 import { motion, useCycle, AnimatePresence } from 'framer-motion'
 import { navLinks } from '@/contracts/navLinks'
 import Link from 'next/link'
+import ThemeToggle from '../ui/ThemeToggle'
 
 const sidebarVariants = {
   open: (height = 1000) => ({
@@ -63,39 +64,49 @@ export default function NavbarMobile() {
   }, [])
 
   return (
-    <nav ref={containerRef} className="md:hidden z-50 relative">
+    <nav ref={containerRef} className="md:hidden z-50 relative h-16">
       {/* כפתור Toggle */}
-      <button
-        onClick={() => toggleOpen()}
-        className="text-3xl hover:cursor-pointer text-foreground absolute top-4 right-4 z-50"
-        aria-label="Toggle Menu"
-      >
-        <motion.svg width="23" height="23" viewBox="0 0 23 23">
-          <Path
-            variants={{
-              closed: { d: 'M 2 2.5 L 20 2.5' },
-              open: { d: 'M 3 16.5 L 17 2.5' },
-            }}
-            animate={isOpen ? 'open' : 'closed'}
-          />
-          <Path
-            d="M 2 9.423 L 20 9.423"
-            variants={{
-              closed: { opacity: 1 },
-              open: { opacity: 0 },
-            }}
-            transition={{ duration: 0.1 }}
-            animate={isOpen ? 'open' : 'closed'}
-          />
-          <Path
-            variants={{
-              closed: { d: 'M 2 16.346 L 20 16.346' },
-              open: { d: 'M 3 2.5 L 17 16.346' },
-            }}
-            animate={isOpen ? 'open' : 'closed'}
-          />
-        </motion.svg>
-      </button>
+      <div className="absolute top-4 left-0 right-0 flex justify-between items-center px-4 z-50">
+        {/* טקסט בצד שמאל */}
+        <h1 className="text-xl font-bold text-foreground">AdirG</h1>
+
+        {/* כפתורי Toggle ותפריט המבורגר בצד ימין */}
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+
+          <button
+            onClick={() => toggleOpen()}
+            className="text-3xl hover:cursor-pointer text-foreground"
+            aria-label="Toggle Menu"
+          >
+            <motion.svg width="23" height="23" viewBox="0 0 23 23">
+              <Path
+                variants={{
+                  closed: { d: 'M 2 2.5 L 20 2.5' },
+                  open: { d: 'M 3 16.5 L 17 2.5' },
+                }}
+                animate={isOpen ? 'open' : 'closed'}
+              />
+              <Path
+                d="M 2 9.423 L 20 9.423"
+                variants={{
+                  closed: { opacity: 1 },
+                  open: { opacity: 0 },
+                }}
+                transition={{ duration: 0.1 }}
+                animate={isOpen ? 'open' : 'closed'}
+              />
+              <Path
+                variants={{
+                  closed: { d: 'M 2 16.346 L 20 16.346' },
+                  open: { d: 'M 3 2.5 L 17 16.346' },
+                }}
+                animate={isOpen ? 'open' : 'closed'}
+              />
+            </motion.svg>
+          </button>
+        </div>
+      </div>
 
       {/* Overlay */}
       <AnimatePresence>
