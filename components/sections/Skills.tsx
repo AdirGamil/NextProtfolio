@@ -55,28 +55,25 @@ const skills = [
 
 const Skills = () => {
   return (
-<section id="skills" className="py-20 bg-background text-foreground">
-  <h2 className="text-center text-3xl font-bold mb-10 text-muted">
-    Tech Stack
-  </h2>
-
-  <Marquee speed={40} gradient={true} gradientWidth={60}>
-    <div className="flex gap-6 px-4 opacity-60 hover:opacity-90 transition-opacity">
-      {skills.map((skill, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center justify-center w-20 h-20 rounded-xl shadow-sm hover:scale-105 transition-transform duration-300
-          bg-muted/10 text-muted dark:bg-muted/20 dark:text-muted"
-        >
-          <div className="text-2xl mb-1">{skill.icon}</div>
-          <span className="text-xs font-medium">{skill.name}</span>
+    <section id="skills" className="py-20 bg-background text-foreground">
+      <Marquee speed={30} autoFill={true} className="select-none">
+        <div className="flex gap-8 p-4 opacity-90 ">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="group  flex flex-col items-center justify-center gap-1 hover:scale-105 transition-transform duration-300"
+            >
+              <div className="text-3xl text-muted group-hover:text-accent transition-colors">
+                {skill.icon}
+              </div>
+              <span className="text-xs text-muted group-hover:text-accent">
+                {skill.name}
+              </span>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </Marquee>
-</section>
-
-
+      </Marquee>
+    </section>
   )
 }
 
