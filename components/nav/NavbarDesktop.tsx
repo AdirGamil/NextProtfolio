@@ -25,20 +25,24 @@ const NavbarDesktop = () => {
 
       {/* אייקונים */}
       <div className="flex gap-4 items-center">
-        <Link
+        <a
           href="https://github.com/AdirGamil"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="GitHub"
+          className="hover:text-accent text-lg transition-colors"
         >
-          <FaGithub className="text-foreground hover:text-primary text-xl transition" />
-        </Link>
-        <Link
+          <FaGithub />
+        </a>
+        <a
           href="https://linkedin.com/in/adirg"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
+          className="hover:text-accent text-lg transition-colors"
         >
-          <FaLinkedin className="text-foreground hover:text-primary text-xl transition" />
-        </Link>
+          <FaLinkedin />
+        </a>
       </div>
     </nav>
   )
