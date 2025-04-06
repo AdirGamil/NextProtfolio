@@ -3,7 +3,6 @@ import { Poppins, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 
-
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
@@ -74,7 +73,7 @@ export default function RootLayout({
     <html lang="en">
       <Navbar />
       <body
-        className={`${poppins.variable} ${inter.variable} antialiased`}
+        className={`${poppins.variable} ${inter.variable} bg-background text-foreground transition-colors antialiased`}
       >
         {children}
       </body>
