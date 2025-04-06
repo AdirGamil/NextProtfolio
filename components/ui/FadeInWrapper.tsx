@@ -20,7 +20,7 @@ export default function FadeInWrapper({
   duration = 0.6,
   distance = 20,
   direction = 'up',
-  once = true,
+  once = false,
 }: FadeInWrapperProps) {
   const getOffset = () => {
     switch (direction) {
