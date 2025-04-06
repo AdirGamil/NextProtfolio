@@ -70,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <Navbar />
       <body
         className={`${poppins.variable} ${inter.variable} bg-background text-foreground transition-colors antialiased`}
