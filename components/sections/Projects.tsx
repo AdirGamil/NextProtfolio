@@ -1,25 +1,23 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import Image from 'next/image'
+import SliderButtons from '../ui/SliderButtons'
 
 const projects = [
   {
     num: '01',
     category: 'frontend',
     title: 'Project 1',
-    description: 'A clean and responsive landing page built with modern tech stack.',
-    stack: [
-      { name: 'React' },
-      { name: 'Next.js' },
-      { name: 'TailwindCSS' },
-    ],
-    image: 'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
+    description:
+      'A clean and responsive landing page built with modern tech stack.',
+    stack: [{ name: 'React' }, { name: 'Next.js' }, { name: 'TailwindCSS' }],
+    image:
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
     live: 'https://example.com',
     github: 'https://github.com/example/project',
   },
@@ -27,13 +25,11 @@ const projects = [
     num: '02',
     category: 'frontend',
     title: 'Project 2',
-    description: 'An interactive dashboard with dynamic charts and state management.',
-    stack: [
-      { name: 'React' },
-      { name: 'Redux' },
-      { name: 'Chart.js' },
-    ],
-    image: 'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
+    description:
+      'An interactive dashboard with dynamic charts and state management.',
+    stack: [{ name: 'React' }, { name: 'Redux' }, { name: 'Chart.js' }],
+    image:
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1725198000/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_krjdij.png',
     live: '',
     github: 'https://github.com/example/dashboard',
   },
@@ -76,30 +72,34 @@ const Projects = () => {
 
             <div className="flex gap-6 text-sm sm:text-base">
               {project.live && (
-                <Link
+                <a
                   href={project.live}
+                  title="Live Preview"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted hover:text-accent transition-colors"
                 >
                   Live
                   <FaArrowUpRightFromSquare className="text-xs" />
-                </Link>
+                </a>
               )}
               {project.github && (
-                <Link
+                <a
                   href={project.github}
+                  title="Github Repo"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted hover:text-accent transition-colors"
                 >
                   GitHub
                   <FaArrowUpRightFromSquare className="text-xs" />
-                </Link>
+                </a>
               )}
             </div>
           </div>
 
           {/* RIGHT */}
-          <div className="w-full xl:w-1/2">
+          <div className="w-full xl:w-1/2 relative">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
@@ -107,25 +107,29 @@ const Projects = () => {
               className="xl:h-[520px] mb-12"
             >
               {projects.map((proj, index) => (
-                <SwiperSlide key={index}>
-                  {proj.image ? (
-                    <div className='relative w-full h-full'>
-
-                    <Image
-                      src={proj.image}
-                      alt={proj.title}
-                      width={640}
-                      height={360}
-                      className="w-full h-[520px] object-cover rounded-xl border border-border"
-                      />
+                <SwiperSlide key={index} className="w-full">
+                  <div className="h-[460px] relative group flex justify-center items-center">
+                    {proj.image ? (
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={proj.image}
+                          alt={proj.title}
+                          quality={100}
+                          sizes="100vw"
+                          fill
+                          className="object-cover rounded-lg border border-border"
+                        />
                       </div>
-                  ) : (
-                    <div className="w-full h-[520px] flex items-center justify-center bg-muted/10 text-muted rounded-xl border border-border">
-                      No Image Provided
-                    </div>
-                  )}
+                    ) : (
+                      <div className="w-full h-[520px] flex items-center justify-center bg-muted/10 text-muted rounded-xl border border-border">
+                        No Image Provided
+                      </div>
+                    )}
+                  </div>
                 </SwiperSlide>
               ))}
+              {/* Slider Buttons */}
+              <SliderButtons />
             </Swiper>
           </div>
         </div>
@@ -135,5 +139,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-
