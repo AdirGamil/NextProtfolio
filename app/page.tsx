@@ -7,7 +7,7 @@ import FadeInWrapper from "@/components/ui/FadeInWrapper"
 
 export default function Home() {
   return (
-    <main>
+    <main className="p-6">
       <FadeInWrapper direction="up" delay={0.1}>
         <Hero />
       </FadeInWrapper>

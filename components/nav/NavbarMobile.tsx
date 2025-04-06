@@ -64,7 +64,7 @@ export default function NavbarMobile() {
   }, [])
 
   return (
-    <nav ref={containerRef} className="md:hidden z-50 relative h-16">
+    <nav ref={containerRef} className="md:hidden z-50 relative h-12">
       {/* כפתור Toggle */}
       <div className="absolute top-4 left-0 right-0 flex justify-between items-center px-4 z-50">
         {/* טקסט בצד שמאל */}

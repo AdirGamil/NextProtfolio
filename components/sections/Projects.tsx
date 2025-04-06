@@ -29,7 +29,7 @@ const Projects = () => {
 
 
     <motion.section className="py-20 bg-background text-foreground">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col xl:flex-row xl:gap-12">
           {/* LEFT */}
           <div className="w-full xl:w-1/2 flex flex-col gap-6 order-2 xl:order-none">
