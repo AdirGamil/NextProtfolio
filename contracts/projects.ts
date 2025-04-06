@@ -16,7 +16,8 @@ export const projects = [
       { name: 'MongoDB' },
     ],
     image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743941726/3-devices-black_cuxjul.png',
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743943619/laptop_3_nmt4mm.png',
+   
     live: 'https://anizone.co.il/',
     github: '',
   },
@@ -35,7 +36,7 @@ export const projects = [
       { name: 'HTML' },
     ],
     image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743942380/desktop_rzqjnh.png',
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743943577/laptop_2_volgor.png',
     live: 'https://stayflex.onrender.com/',
     github: 'https://github.com/AdirGamil/StayFlex-frontend',
   },
@@ -67,8 +68,8 @@ export const projects = [
       { name: 'TailwindCSS' },
       { name: 'HTML' },
     ],
-    image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743488502/nextjs_qhmbei.png',
+   image:
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743943454/laptop_tctbex.png',
     live: 'https://workspacelanding.adirg.dev/',
     github: 'https://github.com/AdirGamil/nextjs-landingpage.git',
   },

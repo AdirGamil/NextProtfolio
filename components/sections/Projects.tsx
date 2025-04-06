@@ -92,7 +92,7 @@ const Projects = () => {
             >
               {projects.map((proj, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center">
+                  <div className="h-[450px] relative group flex justify-center items-center">
                     {proj.image ? (
                       <div className="relative w-full h-full">
                         <Image
@@ -101,7 +101,7 @@ const Projects = () => {
                           quality={100}
                           sizes="100vw"
                           fill
-                          className="object-cover rounded-lg border border-border"
+                          className="object-cover"
                         />
                       </div>
                     ) : (
