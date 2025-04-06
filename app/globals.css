@@ -1,28 +1,41 @@
 @import 'tailwindcss';
 
-/* Light Mode via @theme */
+/* פלטת צבעים — מצב אור */
 @theme {
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  --color-background: #f4f4f5;
-  --color-foreground: #111827;
-  --color-primary: #0ea5e9;
-  --color-secondary: #22c55e;
-  --color-accent: #eab308;
+  /* בסיס */
+  --color-background: #ffffff;
+  --color-foreground: #111111;
   --color-muted: #6b7280;
   --color-border: #e5e7eb;
+
+  /* Accent */
+  --color-accent: #6366f1;         /* Indigo-500 */
+  --color-accent-hover: #4f46e5;   /* Indigo-600 */
+  --color-accent-active: #4338ca;  /* Indigo-700 */
+  --color-accent-muted: #e0e7ff;   /* רקע בהיר מאוד */
+
+  /* Error / Danger */
+  --color-danger: #ef4444;
+  --color-danger-hover: #dc2626;
 }
 
-/* Dark Mode overrides */
+/* מצב כהה */
 :root.dark {
   --color-background: #0f172a;
-  --color-foreground: #f1f5f9;
-  --color-primary: #38bdf8;
-  --color-secondary: #4ade80;
-  --color-accent: #facc15;
+  --color-foreground: #f8fafc;
   --color-muted: #94a3b8;
   --color-border: #1e293b;
+
+  --color-accent: #818cf8;
+  --color-accent-hover: #a5b4fc;
+  --color-accent-active: #c7d2fe;
+  --color-accent-muted: #312e81;
+
+  --color-danger: #f87171;
+  --color-danger-hover: #ef4444;
 }
 
 /* טיפוגרפיה */
@@ -57,22 +70,20 @@
     @apply text-sm text-muted;
   }
 
-
-
   strong {
     @apply font-semibold text-foreground;
   }
 
   blockquote {
-    @apply border-l-4 border-primary pl-4 italic text-muted;
+    @apply border-l-4 border-accent pl-4 italic text-muted;
   }
 
   code {
-    @apply font-mono text-sm bg-muted text-foreground px-1 py-0.5 rounded;
+    @apply font-mono text-sm bg-[var(--color-accent-muted)] text-foreground px-1 py-0.5 rounded;
   }
 }
 
-/* כלי עזר לצבעים */
+/* כלי עזר */
 @layer utilities {
   .bg-background {
     background-color: var(--color-background);
@@ -80,30 +91,6 @@
 
   .text-foreground {
     color: var(--color-foreground);
-  }
-
-  .bg-primary {
-    background-color: var(--color-primary);
-  }
-
-  .text-primary {
-    color: var(--color-primary);
-  }
-
-  .bg-secondary {
-    background-color: var(--color-secondary);
-  }
-
-  .text-secondary {
-    color: var(--color-secondary);
-  }
-
-  .bg-accent {
-    background-color: var(--color-accent);
-  }
-
-  .text-accent {
-    color: var(--color-accent);
   }
 
   .text-muted {
@@ -114,8 +101,32 @@
     border-color: var(--color-border);
   }
 
-  .hover\:bg-primary:hover {
-    background-color: var(--color-primary);
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .hover\:bg-accent:hover {
+    background-color: var(--color-accent-hover);
+  }
+
+  .active\:bg-accent:active {
+    background-color: var(--color-accent-active);
+  }
+
+  .bg-accent-muted {
+    background-color: var(--color-accent-muted);
+  }
+
+  .text-danger {
+    color: var(--color-danger);
+  }
+
+  .hover\:text-danger:hover {
+    color: var(--color-danger-hover);
   }
 
   .nav__link {
