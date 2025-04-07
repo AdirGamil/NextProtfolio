@@ -67,12 +67,12 @@ const Hero = () => {
 
         {/* Main Headline */}
         <h1 className="  font-bold font-heading mb-4">
-          Hello, I'm <span className="text-accent">Adir Gamil</span>
+          Hello, I&apos;m <span className="text-accent">Adir Gamil</span>
         </h1>
 
         {/* Description */}
         <p className="text-muted   font-body mb-8">
-          I'm a fullstack developer with a passion for building innovative and
+          I&apos;m a fullstack developer with a passion for building innovative and
           scalable web solutions.
         </p>
 

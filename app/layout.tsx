@@ -5,6 +5,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import TopButton from '@/components/ui/TopButton'
 import { Toaster } from 'react-hot-toast'
+import Script from 'next/script'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -20,53 +21,56 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Next.js 15 StarterKit by AdirG',
+  title: 'Adir Gamil | Full Stack Developer',
   description:
-    'A modern and minimal starterkit powered by Next.js 15, TypeScript, and TailwindCSS — built by Adir Gamil for fast and scalable development.',
+    "Hi, I'm Adir — a full stack developer specializing in React, TypeScript, and modern web experiences. Explore my projects, skills, and ways to contact me.",
   keywords: [
     'Adir Gamil',
     'Adir',
     'Full Stack Developer',
+    'Frontend Developer',
     'React Developer',
     'Next.js',
-    'Next.js 15',
-    'StarterKit',
-    'TailwindCSS',
+    'Portfolio',
     'TypeScript',
-    'Frontend Developer',
-    'Developer Template',
-    'Boilerplate',
+    'TailwindCSS',
+    'JavaScript',
+    'Web Developer',
+    'MERN Stack',
+    'Israel Developer',
   ],
   authors: [{ name: 'Adir Gamil', url: 'https://adirg.dev/' }],
   creator: 'Adir Gamil',
   openGraph: {
-    title: 'Next.js 15 StarterKit by AdirG',
+    title: 'Adir Gamil | Full Stack Developer',
     description:
-      'Kickstart your development with a sleek, fast, and customizable Next.js 15 starter template. Created by Adir Gamil using TypeScript and TailwindCSS.',
+      "Explore the personal portfolio of Adir Gamil — full stack developer with a passion for modern web apps. Featuring selected projects, skills, and contact.",
     url: 'https://adirg.dev/',
-    siteName: 'AdirG StarterKit',
+    siteName: 'Adir Gamil Portfolio',
     images: [
       {
-        url: 'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743880187/starter_ad8wex.png',
+        url: 'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744012495/desktop_8_yreezq.png',
         width: 1200,
         height: 630,
-        alt: 'Next.js 15 StarterKit by AdirG',
+        alt: 'Adir Gamil Portfolio',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Next.js 15 StarterKit by AdirG',
+    title: 'Adir Gamil | Full Stack Developer',
     description:
-      'A developer boilerplate built by Adir Gamil using Next.js, TypeScript, and TailwindCSS.',
+      "I'm Adir Gamil, a full stack developer building responsive and interactive web experiences using React, Next.js, and TypeScript.",
     creator: '@adirgamil',
     images: [
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743880187/starter_ad8wex.png',
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744012495/desktop_8_yreezq.png',
     ],
   },
 }
 
+
+const scriptId = process.env.NEXT_PUBLIC_ENABLE_SCRIPT_ID
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,6 +78,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+            <head>
+            <Script
+      src={`https://cdn.enable.co.il/licenses/enable-${scriptId}/init.js`}
+      strategy="afterInteractive"
+    />
+      </head>
+
       <Navbar />
       <Toaster position="top-center" />
       <body
