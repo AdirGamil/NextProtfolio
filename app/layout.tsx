@@ -49,13 +49,17 @@ export const metadata: Metadata = {
     siteName: 'Adir Gamil Portfolio',
     images: [
       {
-        url: 'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744012495/desktop_8_yreezq.png',
+        url: 'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744019815/portfolioss_juh8bn.png',
         width: 1200,
         height: 630,
         alt: 'Adir Gamil Portfolio',
       },
     ],
     type: 'website',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
   },
   twitter: {
     card: 'summary_large_image',
@@ -64,7 +68,7 @@ export const metadata: Metadata = {
       "I'm Adir Gamil, a full stack developer building responsive and interactive web experiences using React, Next.js, and TypeScript.",
     creator: '@adirgamil',
     images: [
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744012495/desktop_8_yreezq.png',
+      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744019815/portfolioss_juh8bn.png',
     ],
   },
 }
