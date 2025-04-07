@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import TopButton from '@/components/ui/TopButton'
+import { Toaster } from 'react-hot-toast'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -74,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <Navbar />
+      <Toaster position="top-center" />
       <body
         className={`${poppins.variable} ${inter.variable} bg-background text-foreground transition-colors antialiased`}
       >

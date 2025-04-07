@@ -1,10 +1,45 @@
 'use client'
 
-import React from 'react'
-import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
+import React, { useRef } from 'react'
+import { FaEnvelope, FaPhone } from 'react-icons/fa'
 import SectionTitle from '../ui/SectionTitle'
+import emailjs from '@emailjs/browser'
+import toast from 'react-hot-toast'
 
 const ContactForm = () => {
+  const formRef = useRef<HTMLFormElement | null>(null)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!formRef.current) return
+
+    const formEl = formRef.current
+
+    const sendEmail = async () => {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_TO_OWNER!,
+        formEl,
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
+      )
+
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_TO_CLIENT!,
+        formEl,
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
+      )
+
+      formEl.reset()
+    }
+
+    toast.promise(sendEmail(), {
+      loading: 'Sending message...',
+      success: 'Message sent! Check your inbox ✉️',
+      error: 'Something went wrong. Please try again.',
+    })
+  }
+
   return (
     <section id="contact" className="bg-background text-foreground py-20 px-4">
       <SectionTitle
@@ -21,23 +56,10 @@ const ContactForm = () => {
           <p className="text-muted mb-8">
             Have a project in mind or just want to say hi? Whether it's a
             collaboration, a freelance opportunity, or a quick question — I'd
-            love to hear from you. Feel free to reach out via phone or email and
-            I'll get back to you as soon as I can.
+            love to hear from you.
           </p>
 
           <div className="space-y-6 text-sm sm:text-base">
-            {/* Address */}
-            {/* <div className="flex items-start gap-3">
-              <FaMapMarkerAlt className="w-5 h-5 mt-1 text-accent" />
-              <div>
-                <p className="font-semibold text-foreground">Address</p>
-                <p className="text-muted">
-                  545 Mavis Island, Chicago, IL 99191
-                </p>
-              </div>
-            </div> */}
-
-            {/* Telephone */}
             <div className="flex items-start gap-3">
               <FaPhone className="w-5 h-5 mt-1 text-accent" />
               <div>
@@ -46,7 +68,6 @@ const ContactForm = () => {
               </div>
             </div>
 
-            {/* Email */}
             <div className="flex items-start gap-3">
               <FaEnvelope className="w-5 h-5 mt-1 text-accent" />
               <div>
@@ -58,36 +79,34 @@ const ContactForm = () => {
         </div>
 
         {/* RIGHT SIDE – Form */}
-        <form className="space-y-6">
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="space-y-6"
+        >
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label
-                className="block text-sm font-medium mb-1"
-                htmlFor="firstName"
-              >
+              <label className="block text-sm font-medium mb-1" htmlFor="firstName">
                 First name
               </label>
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
-                className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 required
+                className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
             <div>
-              <label
-                className="block text-sm font-medium mb-1"
-                htmlFor="lastName"
-              >
+              <label className="block text-sm font-medium mb-1" htmlFor="lastName">
                 Last name
               </label>
               <input
                 type="text"
                 id="lastName"
                 name="lastName"
-                className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 required
+                className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
           </div>
@@ -101,8 +120,8 @@ const ContactForm = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 required
+                className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
             <div>
@@ -126,9 +145,9 @@ const ContactForm = () => {
               id="message"
               name="message"
               rows={5}
-              className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               required
-            ></textarea>
+              className="w-full bg-transparent border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            />
           </div>
 
           <button
