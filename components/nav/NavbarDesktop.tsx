@@ -8,7 +8,9 @@ const NavbarDesktop = () => {
   return (
     <nav className="flex items-center justify-between w-full">
       {/* לוגו */}
-      <div className="text-2xl font-heading font-bold text-primary">AdirG<span className='text-accent'>.</span></div>
+      <Link href="#top" className="text-2xl font-heading font-bold text-primary">
+        AdirG<span className="text-accent">.</span>
+      </Link>
 
       {/* לינקים */}
       <ul className="flex gap-8">
@@ -24,13 +26,13 @@ const NavbarDesktop = () => {
         ))}
       </ul>
       {/* אייקונים */}
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-2 items-center">
         <a
           href="https://github.com/AdirGamil"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
-          className="hover:text-accent text-lg transition-colors"
+          className="hover:text-accent text-2xl transition-colors"
         >
           <FaGithub />
         </a>
@@ -39,7 +41,7 @@ const NavbarDesktop = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
-          className="hover:text-accent text-lg transition-colors"
+          className="hover:text-accent text-2xl transition-colors"
         >
           <FaLinkedin />
         </a>

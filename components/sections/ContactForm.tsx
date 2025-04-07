@@ -9,24 +9,25 @@ const ContactForm = () => {
     <section id="contact" className="bg-background text-foreground py-20 px-4">
       <SectionTitle
         eyebrow="Contact"
-        title="Let’s Connect"
+        title="Let's Connect"
         description="Whether you have a project idea, a question, or just want to say hi — feel free to drop me a message. I'm always open to new opportunities and collaborations."
         align="center"
       />
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="max-w-6xl mt-20 mx-auto grid md:grid-cols-2 gap-12">
         {/* LEFT SIDE – Info */}
         <div className="bg-foreground/5 rounded-2xl p-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get in touch</h2>
           <p className="text-muted mb-8">
-            Proin volutpat consequat porttitor cras nullam gravida at. Orci
-            molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu
-            sed malesuada et magna.
+            Have a project in mind or just want to say hi? Whether it's a
+            collaboration, a freelance opportunity, or a quick question — I'd
+            love to hear from you. Feel free to reach out via phone or email and
+            I'll get back to you as soon as I can.
           </p>
 
           <div className="space-y-6 text-sm sm:text-base">
             {/* Address */}
-            <div className="flex items-start gap-3">
+            {/* <div className="flex items-start gap-3">
               <FaMapMarkerAlt className="w-5 h-5 mt-1 text-accent" />
               <div>
                 <p className="font-semibold text-foreground">Address</p>
@@ -34,14 +35,14 @@ const ContactForm = () => {
                   545 Mavis Island, Chicago, IL 99191
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Telephone */}
             <div className="flex items-start gap-3">
               <FaPhone className="w-5 h-5 mt-1 text-accent" />
               <div>
                 <p className="font-semibold text-foreground">Telephone</p>
-                <p className="text-muted">+1 (555) 234-5678</p>
+                <p className="text-muted">+972 (52) 699-9581</p>
               </div>
             </div>
 
@@ -50,7 +51,7 @@ const ContactForm = () => {
               <FaEnvelope className="w-5 h-5 mt-1 text-accent" />
               <div>
                 <p className="font-semibold text-foreground">Email</p>
-                <p className="text-muted">hello@example.com</p>
+                <p className="text-muted">2000adir2000@gmail.com</p>
               </div>
             </div>
           </div>

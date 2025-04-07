@@ -1,11 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-background text-foreground px-4 pt-12 md:pt-0">
+    <section id='top' className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-background text-foreground px-4 pt-12 md:pt-0">
       {/* Mobile first: Profile Image on top */}
       <div className="relative w-48 h-48 md:w-64 md:h-64 mb-8 md:mb-0 md:order-2 flex justify-center items-center">
         {/* Rotating Ring */}
@@ -44,12 +45,14 @@ const Hero = () => {
 
         {/* Profile Image */}
         <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-border bg-background z-10">
-          <img
-            src="https://placehold.co/224x224"
-            alt="Adir's Profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
+  <Image
+    src="https://res.cloudinary.com/dhweqnxgd/image/upload/v1744014252/profile_xdg3yh.png"
+    alt="Adir's Profile"
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
       </div>
 
       {/* Text + Links */}

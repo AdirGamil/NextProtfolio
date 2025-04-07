@@ -68,7 +68,9 @@ export default function NavbarMobile() {
       {/* כפתור Toggle */}
       <div className="absolute top-4 left-0 right-0 flex justify-between items-center px-4 z-50">
         {/* טקסט בצד שמאל */}
-        <h1 className="text-xl font-bold text-foreground">AdirG</h1>
+        <Link href="#top" className="text-xl font-bold text-foreground">
+          AdirG<span className="text-accent">.</span>
+        </Link>
 
         {/* כפתורי Toggle ותפריט המבורגר בצד ימין */}
         <div className="flex items-center gap-3">

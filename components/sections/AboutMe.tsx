@@ -29,7 +29,7 @@ const AboutMe = () => {
           <p>
             I'm Adir, a fullstack developer with a strong foundation in modern
             frontend and backend technologies. After completing an intensive
-            coding bootcamp, I’ve built a wide range of projects — from sleek
+            coding bootcamp, I've built a wide range of projects — from sleek
             landing pages to complex web applications — always with a focus on
             clean code and user experience.
           </p>
@@ -43,7 +43,7 @@ const AboutMe = () => {
           <p>
             Beyond the code, I'm passionate about building meaningful products
             that combine creativity, accessibility, and performance. Whether
-            it’s a personal side project or a client-facing app, I’m always
+            it's a personal side project or a client-facing app, I'm always
             focused on writing scalable, maintainable solutions.
           </p>
         </div>
