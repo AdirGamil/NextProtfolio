@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 import { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import Image from 'next/image'
 import SliderButtons from '../ui/SliderButtons'
@@ -13,7 +13,7 @@ import SectionTitle from '../ui/SectionTitle'
 const Projects = () => {
   const [project, setProject] = useState(projects[0])
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperClass) => {
     const currentSlide = swiper.activeIndex
     setProject(projects[currentSlide])
   }

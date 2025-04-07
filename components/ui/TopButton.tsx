@@ -1,6 +1,4 @@
 'use client'
-
-import Link from 'next/link'
 import { FaArrowUp } from 'react-icons/fa'
 
 export default function TopButton() {

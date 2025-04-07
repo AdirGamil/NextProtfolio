@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, ComponentProps } from 'react'
 import { motion, useCycle, AnimatePresence } from 'framer-motion'
 import { navLinks } from '@/contracts/navLinks'
 import Link from 'next/link'
@@ -156,7 +156,7 @@ export default function NavbarMobile() {
   )
 }
 
-const Path = (props: any) => (
+const Path = (props: ComponentProps<typeof motion.path>) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"

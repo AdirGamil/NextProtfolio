@@ -54,8 +54,8 @@ const ContactForm = () => {
         <div className="bg-foreground/5 rounded-2xl p-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get in touch</h2>
           <p className="text-muted mb-8">
-            Have a project in mind or just want to say hi? Whether it's a
-            collaboration, a freelance opportunity, or a quick question — I'd
+            Have a project in mind or just want to say hi? Whether it&apos;s a
+            collaboration, a freelance opportunity, or a quick question — I&apos;d
             love to hear from you.
           </p>
 
