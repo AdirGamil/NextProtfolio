@@ -23,7 +23,7 @@ const Projects = () => {
       <SectionTitle
         eyebrow="Projects"
         title="Selected Work"
-        description="Each project reflects my dedication to building modern, accessible, and user-focused applications. From sleek landing pages to dynamic dashboards — I turn ideas into impactful digital experiences."
+        description="Each project reflects my dedication to building modern, accessible, and user-focused applications."
         align="center"
       />
 

@@ -1,7 +1,6 @@
-import Image from "next/image"
-import SectionTitle from "../ui/SectionTitle"
-import { assets } from "@/assets/assets"
-
+import Image from 'next/image'
+import SectionTitle from '../ui/SectionTitle'
+import { assets } from '@/assets/assets'
 
 const AboutMe = () => {
   return (
@@ -18,7 +17,7 @@ const AboutMe = () => {
         <div className="w-full md:w-1/3 flex justify-center">
           <Image
             src={assets.user_image}
-            alt="Adir&apos;s Profile"
+            alt="Adir's Profile"
             width={280}
             height={240}
             className="rounded-lg border border-border shadow-md"
@@ -28,24 +27,25 @@ const AboutMe = () => {
         {/* תוכן טקסטואלי */}
         <div className="w-full md:w-2/3 text-muted text-center md:text-left space-y-4">
           <p>
-            I&apos;m Adir, a fullstack developer with a strong foundation in modern
-            frontend and backend technologies. After completing an intensive
-            coding bootcamp, I&apos;ve built a wide range of projects — from sleek
-            landing pages to complex web applications — always with a focus on
-            clean code and user experience.
+            I&apos;m Adir, a Fullstack Developer with a strong passion for building
+            clean, responsive, and user-focused web applications. After
+            completing an intensive coding bootcamp and spending months learning
+            on my own, I&apos;ve developed a wide range of projects - from elegant
+            landing pages to full-featured web platforms.
           </p>
 
           <p>
-            I enjoy working with technologies like React, Next.js, Node.js,
-            TypeScript, and TailwindCSS. I&apos;m also constantly learning new tools
-            and frameworks to stay updated with the latest in web development.
+            My tech stack includes React, Next.js, TypeScript, Node.js, and
+            TailwindCSS, and I&apos;m always exploring new tools and technologies to
+            sharpen my skills and stay up to date with modern development
+            practices.
           </p>
 
           <p>
-            Beyond the code, I&apos;m passionate about building meaningful products
-            that combine creativity, accessibility, and performance. Whether
-            it&apos;s a personal side project or a client-facing app, I&apos;m always
-            focused on writing scalable, maintainable solutions.
+            What drives me most is creating meaningful digital experiences that
+            combine creativity, performance, and accessibility. Whether it&apos;s a
+            personal project or part of a bigger product, I take pride in
+            writing scalable, maintainable code that makes a real impact.
           </p>
         </div>
       </div>
