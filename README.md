@@ -1,27 +1,27 @@
-# Next.js 15 TailwindCSS TypeScript Starter ⚡
+# 💼 Adir Gamil – Personal Portfolio
 
-This Next.js 15 StarterKit is a modern boilerplate designed to accelerate your development with **Next.js 15 App Router**, **TypeScript**, and **TailwindCSS v4**. Built by **AdirG**, it offers a clean and scalable foundation for building fast, responsive, and accessible web applications.
+This is my personal **developer portfolio website** built with **Next.js 15**, **TypeScript**, and **TailwindCSS v4**. It's designed to showcase my skills, featured projects, and allow visitors to connect or contact me easily.
 
-## 🎥 Demo
+## 🎥 Preview
 
-![Next.js 15 StarterKit Demo](https://res.cloudinary.com/dhweqnxgd/image/upload/v1743880187/starter_ad8wex.png)
+![Adir Gamil Portfolio Demo](https://res.cloudinary.com/dhweqnxgd/image/upload/v1744019815/portfolioss_juh8bn.png)
 
-## 🌟 Features
+## 🚀 Features
 
-- **Next.js 15 App Router** – Powered by the latest routing system with layouts, loading states, and server components.
-- **TailwindCSS v4** – Utility-first styling for fast and flexible UI development.
-- **TypeScript** – Full support for type safety and modern development practices.
-- **Responsive Design** – Mobile-first approach with dark mode support.
-- **ESLint & Prettier** – Code formatting and linting out of the box.
-- **Folder Structure** – Clean, scalable, and ready for production.
+- ✨ **Next.js 15 App Router** – Modern file-based routing with layouts and server components.
+- 🎨 **TailwindCSS v4** – Utility-first CSS for a clean and responsive design.
+- 🔒 **TypeScript** – Full type safety for scalable development.
+- 🌗 **Dark Mode** – Built-in dark/light theme toggle.
+- 📱 **Responsive Design** – Optimized for all screen sizes.
+- 🔧 **EmailJS Integration** – originally supported form submissions.
+- 🧠 **Animated UI** – Smooth transitions with Framer Motion.
 
-## 🛠️ Tech Stack
-
-This starter project includes:
+## 🧰 Tech Stack
 
 - **Framework:** Next.js 15
-- **Styling:** TailwindCSS v4
 - **Language:** TypeScript
+- **Styling:** TailwindCSS v4
+- **Animation:** Framer Motion
 - **Tooling:** ESLint, Prettier, PostCSS
 
 ## 🚀 Getting Started
