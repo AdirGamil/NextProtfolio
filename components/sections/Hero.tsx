@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -63,7 +64,26 @@ const Hero = () => {
         className="max-w-xl text-center md:text-left md:pr-12"
       >
         {/* Subtitle */}
-        <h5 className="text-muted   font-body mb-2">FullStack Developer</h5>
+        <h5 className="text-muted   font-body mb-2">
+        <TypeAnimation
+            sequence={[
+              'Full Stack Developer',
+              2000,
+              'React & Next.js Developer',
+              2000,
+              'Frontend Focused',
+              2000,
+              'Turning Design into Code',
+              2000,
+              'TailwindCSS Enthusiast',
+              2000,
+              'Always Learning',
+              2000,
+            ]}
+            wrapper="span"
+            repeat={Infinity}
+          />
+        </h5>
 
         {/* Main Headline */}
         <h1 className="  font-bold font-heading mb-4">
