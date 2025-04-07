@@ -123,7 +123,7 @@ export const projects = [
     ],
     image:
       'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744012746/desktop_9_mfrduz.png',
-    live: 'https://agport.netlify.app/',
+    live: 'https://next.adirg.dev/',
     github: 'https://github.com/AdirGamil/NewPortfolio.git',
   },
   // {
