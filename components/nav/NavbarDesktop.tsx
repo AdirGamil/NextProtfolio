@@ -8,7 +8,7 @@ const NavbarDesktop = () => {
   return (
     <nav className="flex items-center justify-between w-full">
       {/* לוגו */}
-      <div className="text-2xl font-heading font-bold text-primary">AdirG</div>
+      <div className="text-2xl font-heading font-bold text-primary">AdirG<span className='text-accent'>.</span></div>
 
       {/* לינקים */}
       <ul className="flex gap-8">

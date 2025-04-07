@@ -10,14 +10,14 @@ const SliderButtons = () => {
     <div className="absolute bottom-4 right-4 flex gap-4 z-10">
       <button
         onClick={() => swiper.slidePrev()}
-        className="p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
+        className="p-2 bg-accent rounded-full shadow hover:bg-accent-hover transition-colors"
         aria-label="Previous Slide"
       >
         <PiCaretLeftBold size={24} />
       </button>
       <button
         onClick={() => swiper.slideNext()}
-        className="p-2 bg-white/80 rounded-full shadow hover:bg-white transition-colors"
+        className="p-2 bg-accent rounded-full shadow hover:bg-accent-hover transition-colors"
         aria-label="Next Slide"
       >
         <PiCaretRightBold size={24} />

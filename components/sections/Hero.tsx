@@ -79,7 +79,7 @@ const Hero = () => {
           href="/Adir-Resume.pdf"
           download={true}
           className="px-6 py-3 rounded-lg border-2 border-transparent bg-accent text-white font-medium transition-all duration-300
-          hover:bg-primary hover:text-accent cursor-pointer hover:border-accent
+          hover:bg-primary cursor-pointer hover:bg-accent-hover
           active:bg-accent-active"
         >
           Download CV
