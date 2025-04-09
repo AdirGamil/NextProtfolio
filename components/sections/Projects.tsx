@@ -39,14 +39,13 @@ const Projects = () => {
               <h4 className="text-muted text-sm font-medium capitalize">
                 {project.category} project
               </h4>
-<div>
+              <div>
+                <h2 className="font-bold leading-tight text-foreground hover:text-accent transition-colors duration-300">
+                  {project.title}
+                </h2>
 
-              <h2 className="font-bold leading-tight text-foreground hover:text-accent transition-colors duration-300">
-                {project.title}
-              </h2>
-
-              <p className="text-muted">{project.description}</p>
-</div>
+                <p className="text-muted">{project.description}</p>
+              </div>
 
               <ul className="flex flex-wrap gap-3 text-sm sm:text-base font-medium text-accent">
                 {project.stack.map((stack, index) => (
@@ -106,7 +105,7 @@ const Projects = () => {
                             quality={100}
                             sizes="100vw"
                             fill
-                            className="object-cover"
+                            className="object-contain md:object-cover"
                           />
                         </div>
                       ) : (
