@@ -99,7 +99,7 @@ const Hero = () => {
         {/* CTA + Socials */}
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
         <a
-          href="/Adir-Resume.pdf"
+          href="/AdirGamilResume.pdf"
           download={true}
           className="px-6 py-3 rounded-lg border-2 border-transparent bg-accent text-white font-medium transition-all duration-300
           hover:bg-primary cursor-pointer hover:bg-accent-hover
