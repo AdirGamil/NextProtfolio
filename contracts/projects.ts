@@ -1,45 +1,50 @@
 export const projects = [
-  {
-    num: '01',
-    category: 'fullstack',
-    title: 'AniZone – Anime Social Platform',
-    description:
-      'A full-featured MERN app for anime fans — includes blogs, reviews, watchlists & more.',
-    stack: [
-      { name: 'React' },
-      { name: 'Redux' },
-      { name: 'TailwindCSS' },
-      { name: 'JavaScript' },
-      { name: 'Firebase' },
-      { name: 'AWS' },
-      { name: 'Node.js' },
-      { name: 'MongoDB' },
-    ],
-    image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1744011426/desktop_3_l7xydg.png',
-    live: 'https://anizone.co.il/',
-    github: '',
-  },
-  {
-    num: '02',
-    category: 'fullstack',
-    title: 'StayFlex – Airbnb Clone',
-    description:
-      'Vacation rental platform with filters, bookings, user login & full dashboard.',
-    stack: [
-      { name: 'React' },
-      { name: 'Redux' },
-      { name: 'SASS' },
-      { name: 'Node.js' },
-      { name: 'MongoDB' },
-      { name: 'JavaScript' },
-      { name: 'HTML' },
-    ],
-    image:
-      'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743942380/desktop_rzqjnh.png',
-    live: 'https://stayflex.onrender.com/',
-    github: 'https://github.com/AdirGamil/StayFlex-frontend',
-  },
+{
+  num: '01',
+  category: 'fullstack',
+  title: 'AniZone – Anime Social Platform',
+  description:
+    'A production-ready MERN application for anime fans featuring user roles, blogs, reviews, real-time notifications, watchlists, and a custom admin CRM. Built with CI/CD deployment on a self-managed Linux VPS.',
+  stack: [
+    { name: 'React' },
+    { name: 'Redux' },
+    { name: 'TanStack Query' },
+    { name: 'TailwindCSS' },
+    { name: 'JavaScript' },
+    { name: 'Firebase' },
+    { name: 'AWS SES' },
+    { name: 'WebSockets' },
+    { name: 'Node.js' },
+    { name: 'MongoDB' },
+    { name: 'Coolify' },
+    { name: 'Docker' },
+  ],
+  image:
+    'https://res.cloudinary.com/dhweqnxgd/image/upload/v1749191975/desktop_11_edfcnp.png',
+  live: 'https://anizone.co.il/',
+  github: '',
+},
+{
+  num: '02',
+  category: 'fullstack',
+  title: 'StayFlex – Airbnb Clone',
+  description:
+    'A fullstack vacation rental platform with booking system, search filters, user authentication, and a responsive dashboard interface. Designed pixel-perfect from Figma, including real-time UI interactions.',
+  stack: [
+    { name: 'React' },
+    { name: 'Redux' },
+    { name: 'Framer Motion' },
+    { name: 'SASS / SCSS' },
+    { name: 'JavaScript' },
+    { name: 'Node.js' },
+    { name: 'MongoDB' },
+  ],
+  image:
+    'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743942380/desktop_rzqjnh.png',
+  live: 'https://stayflex.onrender.com/',
+  github: 'https://github.com/AdirGamil/StayFlex-frontend',
+},
+
   {
     num: '03',
     category: 'dashboard',

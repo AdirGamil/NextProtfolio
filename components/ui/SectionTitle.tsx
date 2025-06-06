@@ -22,9 +22,9 @@ type SectionTitleProps = {
             {eyebrow}
           </h5>
         )}
-        <h1 className="text-foreground font-heading font-bold">
+        <h2 className="text-foreground font-heading font-bold">
           {title}
-        </h1>
+        </h2>
         {description && (
           <p className="text-muted max-w-2xl font-body">
             {description}
