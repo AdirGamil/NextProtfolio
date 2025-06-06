@@ -9,9 +9,35 @@ import toast from 'react-hot-toast'
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null)
 
+  const isValidForm = () => {
+    const form = formRef.current
+    if (!form) return false
+
+    const firstName = form.firstName.value.trim()
+    const lastName = form.lastName.value.trim()
+    const email = form.email.value.trim()
+    const message = form.message.value.trim()
+
+    const isValidEmail = /\S+@\S+\.\S+/.test(email)
+
+    if (!firstName || !lastName || !email || !message) {
+      toast.error('Please fill in all required fields.')
+      return false
+    }
+
+    if (!isValidEmail) {
+      toast.error('Please enter a valid email address.')
+      return false
+    }
+
+    return true
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!formRef.current) return
+
+    if (!isValidForm()) return
 
     const formEl = formRef.current
 
@@ -55,8 +81,8 @@ const ContactForm = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get in touch</h2>
           <p className="text-muted mb-8">
             Have a project in mind or just want to say hi? Whether it&apos;s a
-            collaboration, a freelance opportunity, or a quick question — I&apos;d
-            love to hear from you.
+            collaboration, a freelance opportunity, or a quick question —
+            I&apos;d love to hear from you.
           </p>
 
           <div className="space-y-6 text-sm sm:text-base">
@@ -79,14 +105,13 @@ const ContactForm = () => {
         </div>
 
         {/* RIGHT SIDE – Form */}
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="space-y-6"
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-1" htmlFor="firstName">
+              <label
+                className="block text-sm font-medium mb-1"
+                htmlFor="firstName"
+              >
                 First name
               </label>
               <input
@@ -98,7 +123,10 @@ const ContactForm = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1" htmlFor="lastName">
+              <label
+                className="block text-sm font-medium mb-1"
+                htmlFor="lastName"
+              >
                 Last name
               </label>
               <input

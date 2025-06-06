@@ -27,25 +27,26 @@ const AboutMe = () => {
         {/* תוכן טקסטואלי */}
         <div className="w-full md:w-2/3 text-muted text-center md:text-left space-y-4">
           <p>
-            I&apos;m Adir, a Fullstack Developer with a strong passion for building
-            clean, responsive, and user-focused web applications. After
-            completing an intensive coding bootcamp and spending months learning
-            on my own, I&apos;ve developed a wide range of projects - from elegant
-            landing pages to full-featured web platforms.
+            I&apos;m Adir, a Fullstack Developer passionate about building
+            clean, scalable, and user-centered web applications. I specialize in
+            React, Next.js, Node.js, and MongoDB, and love bringing designs to
+            life with pixel-perfect execution.
           </p>
 
           <p>
-            My tech stack includes React, Next.js, TypeScript, Node.js, and
-            TailwindCSS, and I&apos;m always exploring new tools and technologies to
-            sharpen my skills and stay up to date with modern development
-            practices.
+            I&apos;ve developed and launched full production platforms like{' '}
+            <strong>AniZone</strong>, a real-time social app hosted on a
+            self-managed Linux VPS, featuring custom CRM tools, live
+            notifications, and thousands of active users. I&apos;m also the
+            creator of <strong>StayFlex</strong>, an end-to-end booking system
+            inspired by Airbnb.
           </p>
 
           <p>
-            What drives me most is creating meaningful digital experiences that
-            combine creativity, performance, and accessibility. Whether it&apos;s a
-            personal project or part of a bigger product, I take pride in
-            writing scalable, maintainable code that makes a real impact.
+            Beyond the code, I care deeply about UX, accessibility, and
+            performance. I&apos;m always exploring new technologies and best
+            practices, and take pride in writing maintainable code that supports
+            real-world impact and user delight.
           </p>
         </div>
       </div>
