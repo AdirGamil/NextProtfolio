@@ -41,7 +41,7 @@ export const projects = [
   ],
   image:
     'https://res.cloudinary.com/dhweqnxgd/image/upload/v1743942380/desktop_rzqjnh.png',
-  live: 'https://stayflex.onrender.com/',
+  live: 'https://stayflex.adirg.dev/',
   github: 'https://github.com/AdirGamil/StayFlex-frontend',
 },
 
