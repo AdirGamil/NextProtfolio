@@ -18,7 +18,7 @@ type SectionTitleProps = {
     return (
       <div className={`flex flex-col gap-2 mb-10 ${alignment} ${className}`}>
         {eyebrow && (
-          <h5 className="text-muted uppercase tracking-wide font-body">
+          <h5 className="text-accent uppercase tracking-wide font-body">
             {eyebrow}
           </h5>
         )}

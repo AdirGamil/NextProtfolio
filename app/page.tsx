@@ -1,6 +1,8 @@
 import AboutMe from "@/components/sections/AboutMe"
 import ContactForm from "@/components/sections/ContactForm"
+import FaqSection from "@/components/sections/FaqSection"
 import Hero from "@/components/sections/Hero"
+import ProcessSteps from "@/components/sections/ProcessSteps"
 import Projects from "@/components/sections/Projects"
 import Skills from "@/components/sections/Skills"
 import FadeInWrapper from "@/components/ui/FadeInWrapper"
@@ -23,6 +25,10 @@ export default function Home() {
       <FadeInWrapper direction="right" delay={0.4}>
         <Projects />
       </FadeInWrapper>
+
+      <ProcessSteps />
+
+<FaqSection />
 
       <FadeInWrapper direction="up" delay={0.5}>
         <ContactForm />
