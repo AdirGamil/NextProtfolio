@@ -25,30 +25,37 @@ const AboutMe = () => {
         </div>
 
         {/* תוכן טקסטואלי */}
-        <div className="w-full md:w-2/3 text-muted text-center md:text-left space-y-4">
-          <p>
-            I&apos;m Adir, a Fullstack Developer passionate about building
-            clean, scalable, and user-centered web applications. I specialize in
-            React, Next.js, Node.js, and MongoDB, and love bringing designs to
-            life with pixel-perfect execution.
-          </p>
+<div className="w-full md:w-2/3 text-muted text-center md:text-left space-y-4">
+  <p>
+    I&apos;m Adir, a Fullstack Developer focused on building modern, efficient
+    and scalable web applications with real impact. My main stack includes
+    React, Next.js, Node.js and MongoDB, where I combine clean architecture
+    with thoughtful UI and pixel perfect execution.
+  </p>
 
-          <p>
-            I&apos;ve developed and launched full production platforms like{' '}
-            <strong>AniZone</strong>, a real-time social app hosted on a
-            self-managed Linux VPS, featuring custom CRM tools, live
-            notifications, and thousands of active users. I&apos;m also the
-            creator of <strong>StayFlex</strong>, an end-to-end booking system
-            inspired by Airbnb.
-          </p>
+  <p>
+    Over the years, I&apos;ve created and launched complete production platforms
+    such as <strong>AniZone</strong>, a real time social ecosystem built for
+    anime fans, running on a self managed Linux VPS with advanced features like
+    custom CRM systems, live notifications, role based permissions and high
+    performance optimization for thousands of active users.
+  </p>
 
-          <p>
-            Beyond the code, I care deeply about UX, accessibility, and
-            performance. I&apos;m always exploring new technologies and best
-            practices, and take pride in writing maintainable code that supports
-            real-world impact and user delight.
-          </p>
-        </div>
+  <p>
+    I&apos;m also the creator of <strong>StayFlex</strong>, an end to end booking
+    platform inspired by Airbnb, where I handled everything from system design,
+    data architecture and UI logic to deployment, optimization and long term
+    scalability planning.
+  </p>
+
+  <p>
+    My approach goes beyond writing code. I place strong emphasis on user
+    experience, accessibility, performance and long term maintainability. I
+    enjoy solving complex problems, refining details and constantly improving
+    my workflow through modern tools and best practices.
+  </p>
+</div>
+
       </div>
     </section>
   )

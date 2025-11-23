@@ -91,10 +91,14 @@ const Hero = () => {
         </h1>
 
         {/* Description */}
-        <p className="text-muted   font-body mb-8">
-          I&apos;m a fullstack developer with a passion for building innovative and
-          scalable web solutions.
-        </p>
+<p className="text-muted font-body mb-8">
+  I&apos;m a passionate full stack developer specializing in modern web
+  technologies like React and Next.js. I build responsive, high performance
+  applications that combine clean design with solid architecture. My goal is
+  to create digital experiences that feel intuitive, fast and impactful.
+</p>
+
+
 
         {/* CTA + Socials */}
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">

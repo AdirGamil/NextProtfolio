@@ -68,22 +68,23 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="bg-background text-foreground py-20 px-4">
-      <SectionTitle
-        eyebrow="Contact"
-        title="Let's Connect"
-        description="Whether you have a project idea, a question, or just want to say hi — feel free to drop me a message. I'm always open to new opportunities and collaborations."
-        align="center"
-      />
+<SectionTitle
+  eyebrow="Contact"
+  title="Let’s Start a Conversation"
+  description="If you are looking for a developer to bring your idea to life, improve an existing product, or build something from scratch, this is the place to reach out. I am always happy to connect."
+  align="center"
+/>
+
 
       <div className="max-w-6xl mt-20 mx-auto grid md:grid-cols-2 gap-12">
         {/* LEFT SIDE – Info */}
         <div className="bg-foreground/5 rounded-2xl p-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get in touch</h2>
-          <p className="text-muted mb-8">
-            Have a project in mind or just want to say hi? Whether it&apos;s a
-            collaboration, a freelance opportunity, or a quick question —
-            I&apos;d love to hear from you.
-          </p>
+<p className="text-muted mb-8">
+  Got an idea you want to bring to life or a product that needs a fresh
+  perspective? I am open to new challenges, freelance opportunities and
+  long term partnerships focused on meaningful digital experiences.
+</p>
 
           <div className="space-y-6 text-sm sm:text-base">
             <div className="flex items-start gap-3">
@@ -180,7 +181,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="bg-accent hover:bg-accent-hover text-white font-medium py-2 px-6 rounded-md transition-colors"
+            className="bg-accent hover:bg-accent-hover hover:cursor-pointer text-white font-medium py-2 px-6 rounded-md transition-colors"
           >
             Send message
           </button>
