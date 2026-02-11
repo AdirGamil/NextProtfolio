@@ -27,6 +27,29 @@ export const projects = [
 {
   num: '02',
   category: 'fullstack',
+  title: 'Speechi – AI Meeting Transcription & Smart Summaries',
+  description:
+    'An AI-powered web application that converts meeting audio into structured summaries, action items, decisions, and translated transcripts. Built with a secure FastAPI backend integrating OpenAI Whisper for speech-to-text and Anthropic Claude for intelligent analysis. Includes authentication, usage limits, export to DOCX/PDF, and anti-abuse protection layers.',
+  stack: [
+    { name: 'React' },
+    { name: 'TypeScript' },
+    { name: 'Context API' },
+    { name: 'GSAP' },
+    { name: 'Tailwind CSS' },
+    { name: 'FastAPI' },
+    { name: 'Python' },
+    { name: 'MongoDB' },
+    { name: 'JWT Authentication' },
+    { name: 'OpenAI Whisper API' },
+    { name: 'Anthropic Claude API' }
+  ],
+  image:
+    'https://res.cloudinary.com/dhweqnxgd/image/upload/v1770838767/desktop_1_pirhz3.png',
+  live: 'https://speechi.adirg.dev/',
+},
+{
+  num: '03',
+  category: 'fullstack',
   title: 'StayFlex – Airbnb Clone',
   description:
     'A fullstack vacation rental platform with booking system, search filters, user authentication, and a responsive dashboard interface. Designed pixel-perfect from Figma, including real-time UI interactions.',
@@ -46,7 +69,7 @@ export const projects = [
 },
 
   {
-    num: '03',
+    num: '04',
     category: 'dashboard',
     title: 'Management System – Admin Panel',
     description:
@@ -63,7 +86,7 @@ export const projects = [
     github: 'https://github.com/AdirGamil/ManagementSystem',
   },
   {
-    num: '04',
+    num: '05',
     category: 'frontend',
     title: 'Workspace – App Landing Page',
     description:
@@ -81,7 +104,7 @@ export const projects = [
     github: 'https://github.com/AdirGamil/nextjs-landingpage.git',
   },
   {
-    num: '05',
+    num: '06',
     category: 'frontend',
     title: 'Financial – Pricing Page',
     description:
@@ -98,7 +121,7 @@ export const projects = [
     github: 'https://github.com/AdirGamil/TailwindCSS-project',
   },
   {
-    num: '06',
+    num: '07',
     category: 'portfolio',
     title: 'Classic Portfolio',
     description:
@@ -115,7 +138,7 @@ export const projects = [
     github: 'https://github.com/AdirGamil/Portfolio',
   },
   {
-    num: '07',
+    num: '08',
     category: 'portfolio',
     title: 'Next.js 15 Portfolio',
     description:
